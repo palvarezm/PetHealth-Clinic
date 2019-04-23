@@ -1,2 +1,2 @@
 # PetHealth-Clinic
-PetHealth android mobile application for clinics
+PetHealth android mobile application for veterinarians and clinics
