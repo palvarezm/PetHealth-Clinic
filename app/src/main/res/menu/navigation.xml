@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-            android:id="@+id/destination_appts"
-            android:icon="@drawable/ic_launcher_foreground"
-            android:title="Appointments"/>
-    <item
-            android:id="@+id/destination_profile"
-            android:icon="@drawable/ic_launcher_foreground"
-            android:title="Profile"/>
-    <item
-            android:id="@+id/destination_chats"
-            android:icon="@drawable/ic_launcher_foreground"
-            android:title="Chats"/>
 
+    <item
+            android:id="@+id/navigation_appointments"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Citas" />
+
+    <item
+            android:id="@+id/navigation_myProfile"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Mi perfil" />
+
+    <item
+            android:id="@+id/navigation_chat"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Chat" />
 
 </menu>
