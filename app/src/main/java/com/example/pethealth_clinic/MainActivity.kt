@@ -13,17 +13,17 @@ class MainActivity : AppCompatActivity() {
         when(item.itemId){
             R.id.navigation_appointments ->{
                 println("Mis citas")
-                replaceFragment(AppointmentsFragment)
+                replaceFragment(AppointmentsFragment())
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_myProfile ->{
                 println("Mi perfil")
-                replaceFragment(myProfileFragment)
+                replaceFragment(myProfileFragment())
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_chat ->{
                 println("Chat")
-                replaceFragment(ChatFragment)
+                replaceFragment(ChatFragment())
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main )
 
         bottomNavigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
         /*val host = NavHostFragment.create(R.navigation.nav_graph)
