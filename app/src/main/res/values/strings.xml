@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">PetHealth-Clinic</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Carol Rivas</string>
+    <string name="contact">Telephone Number</string>
+    <string name="social_url">www.facebook.com/elbuenperro</string>
+    <string name="schedule">Available at 4</string>
+    <string name="appointments">Appointments</string>
+    <string name="my_profile">My Profile</string>
+    <string name="chat">Chat</string>
 </resources>
