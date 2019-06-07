@@ -36,4 +36,17 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
     implementation 'android.arch.navigation:navigation-fragment:1.0.0'
     implementation 'com.google.android.material:material:1.0.0-rc02'
+
+    implementation 'com.amitshekhar.android:android-networking:1.0.0'
+
+
+    //retrofit library
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+
+    //A Converter which uses Gson for serialization to and from JSON.
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
 }
