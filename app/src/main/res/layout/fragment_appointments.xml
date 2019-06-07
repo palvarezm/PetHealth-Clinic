@@ -9,12 +9,9 @@
 >
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
 
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Here is where your appointments go"/>
     <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/appointmentRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
