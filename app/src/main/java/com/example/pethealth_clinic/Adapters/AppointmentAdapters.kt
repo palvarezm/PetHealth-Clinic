@@ -11,7 +11,7 @@ import com.example.pethealth_clinic.R
 import com.google.gson.JsonArray
 
 class AppointmentAdapters(private val fragment: Fragment) : RecyclerView.Adapter<AppointmentAdapters.ViewHolder>() {
-    override fun getItemCount(): Int {
+    override fun getItemCount(): Int{
         return cardInfo!!.size()
     }
 

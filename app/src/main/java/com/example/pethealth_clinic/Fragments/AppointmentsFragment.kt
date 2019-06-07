@@ -61,7 +61,7 @@ class AppointmentsFragment : Fragment() {
 
     private fun updateAppointment() {
         val call = RestClient().webServices
-            .getAppts(sharedPreferencesManager?.accessToken, sharedPreferencesManager?.user?.id)
+            .getAppts(sharedPreferencesManager?.accessToken, /*sharedPreferencesManager?.user?.id*/ 27 )
         call.enqueue(object : LoggerCallback<RestView<JsonArray>>() {
             override fun onResponse(call: Call<RestView<JsonArray>>, response: Response<RestView<JsonArray>>) {
                 super.onResponse(call, response)
@@ -69,8 +69,8 @@ class AppointmentsFragment : Fragment() {
                 appointmentAdapters = AppointmentAdapters(fragment)
                 appointmentRecyclerView?.adapter = appointmentAdapters
                 appointmentRecyclerView?.layoutManager = appointmentLayoutManager
-                appointmentAdapters!!.setAppointments(answer!!.data)
-                appointmentAdapters!!.notifyDataSetChanged()
+                answer?.data?.let { appointmentAdapters?.setAppointments(it) }
+                appointmentAdapters?.notifyDataSetChanged()
             }
 
             override fun onFailure(call: Call<RestView<JsonArray>>, t: Throwable) {
